@@ -17,7 +17,7 @@ class TestBlockChainMethods(unittest.TestCase):
     def test_proof_of_work(self):
         self.assertEqual(self.chain.proof_of_work(1), 72608)
         self.assertEqual(self.chain.proof_of_work(2), 69926)
-        self.assertNotEquals(self.chain.proof_of_work(2), 3)
+        self.assertNotEqual(self.chain.proof_of_work(2), 3)
 
 
 if __name__ == '__main__':
