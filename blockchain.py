@@ -2,7 +2,7 @@ import hashlib
 import json
 
 from time import time
-from uuid import uuid4
+
 
 class Blockchain(object):
     def __init__(self):
@@ -14,6 +14,7 @@ class Blockchain(object):
 
     def proof_of_work(self, last_proof):
         """
+        Simple mathematical puzzle to to assure that this is a valid block
         Simple Proof of Work Algorithm:
          - Find a number p' such that hash(pp') contains leading 4 zeroes, where p is the previous p'
          - p is the previous proof, and p' is the new proof
